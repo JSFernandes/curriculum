@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge João \textsc{Fernandes}}\bigskip\par} % Your name
+
+\section{Informação Pessoal}
+
+\begin{tabular}{rl}
+\textsc{Local e Data de Nascimento:} & Porto  | 15 Novembro 1991 \\
+\textsc{Morada:} & Rua Divino Salvador de Moreira, n82, R/c Trazeiras, Maia, Portugal \\
+\textsc{Telemóvel:} & +351 917456174\\
+\textsc{email:} & \href{mailto:jsfernandes91@gmail.com}{jsfernandes91@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Experiência de Trabalho}
+
+\begin{tabular}{r|p{11cm}}
+\textsc{Março 2013-Maio 2013} & Monitor de Concepção e Análise de Algoritmos, FEUP\\
+& \footnotesize{Responsável por auxiliar os alunos no desenvolvimento dos seus projectos e realizar manutenção de uma API de visualização de grafos em C++}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Março 2013} & Demonstração de trabalho práctico na Semana Profissão: Engenheiro\\
+& \footnotesize{Demonstração de um trabalho práctico efectuado na Unidade Curricular de Inteligência Artificial a alunos do Ensino Secundário.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Novembro 2012-Março 2013} & Organização do Encontro Nacional de Estudantes de Informática 2013, Responsável pelo programa\\
+& \footnotesize{Responsável por selecionar, contactar e receber oradores para o evento. O número de estudantes a participar no evento ultrapassou os 550, quebrando o recorde anterior de 300.}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Educação}
+
+\begin{tabular}{rl}	
+\textsc{2009-Presente} & Mestrado Integrado em Engenharia Informática e Computação, \textbf{FEUP}\\
+&\normalsize \textsc{Média Actual}: 15,05\\
+&\\
+
+%------------------------------------------------
+\textsc{Setembro 2013 - Fevereiro 2014} & Aluno ao abrigo do Programa Erasmus, \textbf{Sapienza Università di Roma}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{2006-2009} & Escola Secundária da Maia\\
+&\normalsize \textsc{Média Final}: 17\\
+&\\
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Linguagens}
+
+\begin{tabular}{rl}
+\textsc{Inglês:} & Utilizador Avançado - Pontuação de 7.0 no Exame IELTS \\
+
+\textsc{Português:} & Língua Materna\\
+
+\textsc{Castelhano:} & Conhecimento Intermédio\\
+
+\textsc{Italiano:} & Conhecimento Básico \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Conhecimentos Informáticos}
+
+\begin{tabular}{rl}
+Conhecimento Básico: & \textsc{LISP}, \textsc{Assembly}, \textsc{sql}, \textsc{TinyOS}, \textsc{Android}, \textsc{html}, Unity, \textsc{OpenGL}, \textsc{Linux}, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+
+Conhecimento Intermédio: & \textsc{C}, \textsc{C++}, \textsc{C\#}, \textsc{UML}, \textsc{Prolog}, \textsc{SVN}, Ruby on Rails, \textsc{JUnit}, Google Apps,  Redmine, Trac, .NET, \textsc{Git}\\
+
+Conhecimento Avançado: & \textsc{Java} \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+\par{\centering\Large \hypertarget{grds}{Mestrado Integrado em Informática e Computação}\par}\large{\centering Notas\par}\normalsize
+
+\begin{center}
+\begin{tabular}{lcc}
+\multicolumn{1}{c}{\textsc{Unidade Curricular}} & \textsc{Nota}\\ \hline
+Análise Matemática & 15\\
+Arquitectura e Organização de Computadores & 16\\
+Fundamentos da Programação & 18\\
+Matemática Discreta & 17\\
+Projecto FEUP & 17\\
+Álgebra & 15\\ \\
+Complementos de Matemática & 11\\
+Física 1 & 10\\
+Microprocessadores e Computadores Pessoais & 17\\
+Métodos Estatísticos & 15\\	
+Programação	 & 17\\ \\
+Algoritmos e Estruturas de Dados & 17\\
+Física 2 & 13\\
+Laboratório de Computadores & 17\\
+Métodos Numéricos & 17\\
+Teoria da Computação & 14\\	 \\
+Bases de Dados & 12\\		
+Computação Gráfica & 18\\
+Concepção e Análide de Algoritmos & 17\\	
+Laboratório de Programação Orientada por Objectos & 18\\
+Sistemas Operativos & 15\\ \\
+Engenharia de Software & 14\\
+Laboratório de Aplicações com Interface Gráfica & 17\\			
+Linguagens e Tecnologias Web & 13\\
+Programação em Lógica & 15\\
+Redes de Computadores & 14\\ \\
+Compiladores & 14\\
+Inteligência Artificial & 13\\
+Laboratório de Bases de Dados e Aplicações Web & 18\\
+Proficiência Pessoal e Interpessoal & 14\\
+Sistemas Distribuidos & 17\\ \\
+Agentes e Inteligência Artificial Distribuída & 15\\
+Gestão de Empresas & 11\\
+Laboratório de Desenvolvimento de Software & 17\\
+Métodos Formais em Engenharia de Software & 12\\
+Sistemas de Informação & 11\\ \\
+Investigação Operacional & 10\\
+Laboratório de Gestão de Projectos & 17\\
+Desenvolvimento de Jogos de Computador & 16\\
+Serviços de Rede e de Sistema & 14\\
+Tecnologias de Distribuição e Integração & 17\\														
+& Média & 15,05 \\\cline{2-3}
+\end{tabular}
+\end{center}
+\bigskip
+\hrule
+\bigskip
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
