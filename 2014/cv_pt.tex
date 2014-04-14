@@ -1,0 +1,142 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{João}{Fernandes}
+\title{Engenheiro Informático}                               % optional, remove / comment the line if not wanted
+\address{Rua Divino Salvador de Moreira n82 r/c trazeiras}{4470-105 Moreira da Maia}{Portugal}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+351 917456174}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{me@jsfernandes.net}                               % optional, remove / comment the line if not wanted
+\homepage{www.jsfernandes.net}                         % optional, remove / comment the line if not wanted
+%\extrainfo{I turn caffeine into code}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Educação}
+\cventry{2009--2014}{Mestrado Integrado em Engenharia Informática e Computação}{Faculdade de Engenharia da Universidade do Porto(FEUP)}{}{Média actual: \textit{15,05/20}}{}  % arguments 3 to 6 can be left empty
+\cventry{Set.2013-Fev.2014}{Aluno de Erasmus}{Sapienza Università di Roma}{}{Média: \textit{28,25/30}}{}
+\cventry{2006--2009}{Ensino Secundário}{Escola Secundária da Maia}{}{Média Final: \textit{17/20}}{}
+
+\section{Tese de Mestrado}
+\cvitem{Título}{\emph{No-Touch Interfaces}}
+\cvitem{Descrição}{Esta tese pertende definir um conjunto de regras de UX para interfaces No-Touch e criar uma framework para implementar este tipo de interfaces para web, utilizando o Microsoft Kinect. A aplicação utilizada como caso de estudo é uma aplicação para os médicos consultarem o historial clínico do paciente durante uma cirurgia.}
+
+\section{Experiência}
+\cventry{Fevereiro 2014--Julho 2014}{Estágio para tese de mestrado}{Glintt Healthcare Solutions}{}{}{Implementação de uma framework para a criação de interfaces web utilizáveis com o Microsoft Kinect, usando uma aplicação existente como caso de estudo.}
+\cventry{Março 2013--Junho 2013}{Monitor de Concepção e Análise de Algoritmos}{FEUP}{}{}{Responsável por ajudar os alunos com os seus projectos e manter uma API em C++ para visualização de grafos.}
+\cventry{Novembro 2012--Março 2013	}{Organizador do Encontro Nacional de Estudantes de Informática 2013, Responsável pelo programa}{}{}{}{Responsável por selecionar, contactar e receber oradores para o evento. O evento teve mais de 550 participantes, superando o recorde anterior de 300.}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Competências Técnicas}
+\cvitem{Básicas}{HTML, CSS, Android, TinyOS, R, Assembly}
+\cvitem{Intermédias}{Javascript, Ruby on Rails, C, C++, C\#, JUnit, Jasmine, Git, SCRUM}
+\cvitem{Advançadas}{Java, Microsoft Kinect, LeapMotion}
+
+
+\section{Linguagens}
+\cvitemwithcomment{Português}{Língua Materna}{}
+\cvitemwithcomment{Inglês}{Utilizador Avançado - Pontuação de 7.0 no IELTS}{}
+\cvitemwithcomment{Castelhano}{Utilizador Intermédio}{}
+\cvitemwithcomment{Italiano}{Utilizador Básico}{}
+ 
+\section{Interesses}
+\cvitem{Couchsurfing}{Durante o meu período de Erasmus juntei-me ao Couchsurfing para conhecer pessoas e alargar os meus horizones. Apesar de ter sido menos activo ultimamente, planeio voltar a dedicar mais tempo a esta comunidade quando voltar a viver por mim próprio.}
+\cvitem{Conduzir}{Apesar das infelicidades e dificuldades que tive para tirar a carta de condução, tornei-me um condutor competente e tenho gosto em conduzir, especialmente durante a noite.}
+\cvitem{Coozinhar}{Quando cheguei a Roma em Erasmus dei por mim a querer comer bem sem gastar muito e com vontade de aprender. Fiz-me à cozinha e agora gosto de achar que sou bom cozinheiro, apesar do meu livro de receitas ser ainda pequeno.}
+\cvitem{"Geeking out"}{Desde videojogos a Magic: The Gathering. Não tenho planos de parar em breve.}
+
+\section{Outros pontos}
+\cvlistitem{Fui selecionado para apresentar um projecto de Inteligência Artificial a alunos do ensino secundário na "Semana Profissão Engenheiro".}
+\cvlistitem{Fui ao SAPO Codebits três vezes, sendo que na última dei uma pequena talk intitulada "UX in Natural User Interfaces".}
+\cvlistitem{Tenho um certificado de introdução a engenharia de software experimental.}
+\cvlistitem{Estou a seguir ou prestes a seguir alguns cursos no Coursera: \begin{itemize}
+	\item R Programming; 
+	\item Functional Programming Principles in Scala; 
+	\item Malicious Software and its Underground Economy: Two Sides to Every Story; 
+	\item Pattern-Oriented Software Architectures: Programming Mobile Services for Android Handheld Systems.\end{itemize}}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
