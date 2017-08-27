@@ -1,229 +1,132 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Deedy CV/Resume
-% XeLaTeX Template
-% Version 1.0 (5/5/2014)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Debarghya Das (http://www.debarghyadas.com)
-% With extensive modifications by:
-% Vel (vel@latextemplates.com)
-%
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
-% Important notes:
-% This template needs to be compiled with XeLaTeX.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%&pdflatex
+\documentclass{tccv}
+\usepackage{fontspec} % Required for specifying custom fonts in XeLaTeX
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4
+\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig} % The primary font for content text; defines bold, italic and bold-italic as well
+
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight} % The font used where \sfffamily is called
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
+\part{João Fernandes}
 
-\namesection{João}{Fernandes}{ % Your name
-\href{https://joaofernandes.me}{joaofernandes.me} \\ % Your website, LinkedIn profile or other web address
-\href{mailto:hi@joaofernandes.me}{hi@joaofernandes.me} | +34 617810496 % Your contact information
-}
+\section{Work experience}
 
-%----------------------------------------------------------------------------------------
-%	LEFT COLUMN
-%----------------------------------------------------------------------------------------
+\begin{eventlist}
 
-\begin{minipage}[t]{0.3\textwidth} % The left column takes up 30% of the text width of the page
+\item{June 2017 -- Present}
+     {Software Engineer}
+     {Novicap}
 
-%------------------------------------------------
-% Education
-%------------------------------------------------
+\href{https://novicap.com/}{Novicap} is an invoice selling platform based in Barcelona. I work with Ruby on Rails,
+and have implemented a double entry accounting system for the company. I also
+improved the team's practices in git, testing, and code reviewing.
+
+\item{August 2014 - December 2016}
+     {Software Engineer}
+     {Seedrs}
+
+\href{https://www.seedrs.com/}{Seedrs} is an equity crowdfunding platform, which was based in Lisbon and London when I joined.
+At Seedrs, I:
+
+- Was introduced to testing with RSpec and Cucumber;
+
+- Worked on a site-wide responsive redesign;
+
+- Worked with both MySQL and MongoDB;
+
+- Worked with product owner analyzing user data to assess how to improve the platform;
+
+- Worked on financial and legal requirements imposed by the UK's FCA;
+
+- Developed a Salesforce integration;
+
+- Tackled performance issues;
+
+- Started working in Lisbon, and relocated to London in 2016 as the company wanted a product
+team co-located with the marketing and operational teams.
+
+\item{February 2014 - July 2014}
+     {Intern for Master Thesis}
+     {Glintt Healthcare Solutions}
+
+At Glintt I worked on my master thesis, whose goal was the creation of a framework
+to use the Microsoft Kinect in webpages. This required:
+
+- Creating a native C\# application, which communicated with the browser's Javascript via websockets;
+
+- Performing usability research on the user interactions;
+
+- Implementing video, PDF, and image manipulation using Javascript.
+
+\item{February 2013 - June 2013}
+     {Teaching Assistant}
+     {Faculty of Engineering, University of Porto}
+
+I acted as teaching assistant for the Algorithm Design and Analysis course. I was
+responsible for helping sudents with their C++ projects, which revolved around graph
+and string manipulation algorithms.
+
+\end{eventlist}
+
+\personal
+    [joaofernandes.me]
+    {+34 617810496}
+    {hi@joaofernandes.me}
 
 \section{Education}
 
-\subsection{Faculty of Engineering, University of Porto}
-\descript{Master in Informatics and Computer Engineering}
-\location{2009-2014 | Porto}
+\begin{yearlist}
 
-\sectionspace % Some whitespace after the section
+\item[Master Degree]{2009-2014}
+     {Informatics and Computer Engineering}
+     {Faculty of Engineering, Univesity of Porto}
 
-%------------------------------------------------
+\item[Erasmus student]{2013-2014}
+     {Informatics}
+     {Sapienza Università di Roma}
 
-\subsection{Sapienza Università di Roma}
-\descript{Erasmus Student in Master in Informatics}
-\location{Sep 2013 - Feb 2014 | Rome}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Links
-%------------------------------------------------
-
-\section{Links}
-
-Github:// \href{https://github.com/JSFernandes}{\bf JSFernandes} \\
-LinkedIn:// \href{https://www.linkedin.com/in/jsfernandes}{\bf jsfernandes} \\
-Twitter:// \href{https://twitter.com/JSF_Legacy}{\bf @JSF\_Legacy} \\
-Skype:// \href{skype:jsfernandes91?call}{\bf jsfernandes91}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Skills
-%------------------------------------------------
+\end{yearlist}
 
 \section{Skills}
 
-\subsection{Professional}
+\begin{factlist}
 
-\location{Languages \& Frameworks}
-Ruby on Rails \textbullet{} Javascript \textbullet{} Ember.js \\
-MySQL \textbullet{} SASS \textbullet{} RSpec \textbullet{} Cucumber \\
+\item{Extensive experience}
+     {Ruby, Git, RSpec, Cucumber, CSS, SASS, Javascript, Mixpanel, UNIX,
+     MySQL, PostgreSQL, Scrum, Kanban}
 
-\location{External integrations}
-Stripe \textbullet{} Currency Cloud \textbullet{} Chartio \\
-Mixpanel \textbullet{} Google Analytics \\
-Salesforce \textbullet{} Customer.io \\
+\item{Basic experience}
+     {AWS, React.js, Ember.js, Node.js, GraphQL, MongoDB, Salesforce, Stripe, Intercom, Optimizely, TDD,
+     Pair programming, New Relic}
 
-\location{Tools \& Methodologies}
-Git \textbullet{} UNIX \textbullet{} Engine Yard \textbullet{} Slack \\
-Trello \textbullet{} Scrum \textbullet{} Kanban \\
+\item{Used outside work}
+     {Docker, Digital Ocean, Heroku, Scala, Python, Android, C\#, Java, C++}
 
-\sectionspace
+\end{factlist}
 
-\subsection{Hobby}
-Heroku \textbullet{} Digital Ocean \textbullet{} Sidekiq \\
-Python \textbullet{} Scala \textbullet{} Docker \textbullet{} AWS \\
+\section{Other roles}
 
-\sectionspace
+\begin{yearlist}
 
-\subsection{Academic}
-Java \textbullet{} Android \textbullet{} C++ \textbullet{} C\# \\
+\item{Feb. 2017 - Present}
+     {\href{https://movingworlds.org/}{MovingWorlds}}
+     {Technology advisor - Helping with critical issues, recruitment of a lead developer,
+      did development in Node.js for the platform }
 
-\sectionspace % Some whitespace after the section
+\item{2012 - 2013}
+     {ENEI - National Meeting of Informatics Students (Portugal)}
+     {Event Organizer - Head of Programme}
 
-%----------------------------------------------------------------------------------------
+\end{yearlist}
 
-%------------------------------------------------
-% Languages
-%------------------------------------------------
+\section{Spoken languages}
 
-\section{Languages}
-\location{Portuguese - Native User}
-\location{English - Advanced User}
-\location{Spanish - Intermediate User}
-\location{Italian - Basic User}
-
-\sectionspace % Some whitespace after the section
-
-%----------------------------------------------------------------------------------------
-
-\end{minipage} % The end of the left column
-\hfill
-%
-%----------------------------------------------------------------------------------------
-%	RIGHT COLUMN
-%----------------------------------------------------------------------------------------
-%
-\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
-%------------------------------------------------
-% Experience
-%------------------------------------------------
-
-\section{Work Experience}
-
-\runsubsection{MovingWorlds}
-\descript{| Software Engineer}
-
-\location{Medellín, Feb 2017 - Mar 2017}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Did full stack Node.js development.
-\item Improved integrations with Mailchimp and Streak.
-\item Fixed performance issues on searches with dozens of thousands of results, via pagination, indexes, and query optimization.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-\runsubsection{Seedrs}
-\descript{| Software Engineer}
-
-\location{Lisbon and London, Aug 2014 – Dec 2016}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightitemize}
-\item Did full-stack Ruby on Rails development with RSpec, Cucumber, HAML, SASS, and Javascript with JQuery.
-\item Worked autonomously from London since July 2016, while the remaining engineers worked in Lisbon.
-\item Worked closely with the product director and design team to iterate on features under development.
-\item Served as Scrum Master since December 2015.
-\item Worked with Stripe support to identify and solve issues affecting Seedrs.
-\item Automated reports of platform data for compliance with the UK's FCA.
-\item Worked on the responsive redesign of some pages.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Glintt Healthcare Solutions}
-\descript{| Intern for Master's Thesis}
-
-\location{Porto, Feb 2014 – July 2014}
-\begin{tightitemize}
-\item Developed a Javascript framework that communicated with a native C\# application to receive event data via sockets and allow users to interact with the page using the Microsoft Kinect.
-\item Implemented basic PDF and image control via Javascript.
-\item Studied different interaction gestures with the Microsoft Kinect to optimize accessibility and user experience.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-
-\runsubsection{Faculty of Engineering, University of Porto} \\
-\descript{Teaching Assistant - Algorithm Design and Analysis}
-
-\location{Porto, Mar 2013 – Jun 2013}
-\begin{tightitemize}
-\item Helped students with their C++ projects regarding graph and string algorithms.
-\item Performed maintenance on a library used by students to display graphs.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Event organization
-%------------------------------------------------
-
-\section{Event organization}
-
-\runsubsection{ENEI - National Meeting of Informatics Students} \\
-\descript{Head of Programme}
-
-\location{Nov 2012 – Mar 2013}
-\begin{tightitemize}
-\item Selected, invited and received speakers for the event in a variety of topics - Infosec, NFC, Web Development.
-\item Broke the previous attendance record of roughly 300 attendees by achieving nearly 600 attendees.
-\end{tightitemize}
-
-\sectionspace % Some whitespace after the section
-
-%------------------------------------------------
-% Other
-%------------------------------------------------
-
-\section{Other}
-
-\begin{tabular}{rll}
-2016 & Wrote a blogpost about dependencies in agile for \href{http://scrumandkanban.co.uk/how-to-deal-with-dependencies/}{scrumandkanban.co.uk} \\
-2014 & Gave a small talk titled "UX in Natural User Interfaces" to a few dozen people \\
-2013 & Artificial Intelligence project selected to introduce university to potential students
-\end{tabular}
-
-\sectionspace % Some whitespace after the section
-
-\end{minipage} % The end of the right column
+\begin{factlist}
+\item{Portugese}{Native User}
+\item{English}{Advanced User}
+\item{Spanish}{Intermediate User}
+\item{Italian}{Basic User}
+\end{factlist}
 
 \end{document}
