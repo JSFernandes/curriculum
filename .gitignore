@@ -2,3 +2,4 @@
 *.gz
 *.aux
 *.out
+*.DS_Store
